@@ -1,6 +1,6 @@
 <!-- BANNER -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:020617,50:1e293b,100:0ea5e9&height=220&section=header&text=Tu%20Buffet&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Sistema%20de%20pedidos%20y%20pagos%20escolares&descAlignY=60&descSize=16" />
+  <img src="Documentos/Imagenes/TuBuffet.gif" width="100%" />
 </p>
 
 <h3 align="center">Digitalizando la experiencia del buffet escolar</h3>
