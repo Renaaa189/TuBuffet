@@ -1,6 +1,6 @@
 <!-- BANNER -->
 <p align="center">
-  <img src="Documentos/Imagenes/gif" width="100%" />
+  <img src="Documentos/Imagenes/Gif TuBuffet.gif" width="100%" />
 </p>
 
 <h3 align="center">Digitalizando la experiencia del buffet escolar</h3>
