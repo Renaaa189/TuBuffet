@@ -3,7 +3,7 @@
   <img src="Documentos/Imagenes/TuBuffet.gif" width="100%" />
 </p>
 
-<h3 align="center">Digitalizando la experiencia del buffet escolar</h3>
+<h3 align="center">Digitlizando la experiencia del buffet escolar</h3>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0ea5e9,100:1e293b&height=3" />
