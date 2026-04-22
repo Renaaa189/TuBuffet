@@ -116,7 +116,7 @@ El sistema contempla el diseño y desarrollo de una plataforma móvil enfocada e
 
 <p align="center">
   <b>
-    Desarrollado por:<br><br>
+    En desarrollo por:<br><br>
         <a href="https://github.com/Renaaa189" style="color: inherit; font-weight: bold;">Renata Gallucci</a> y 
     <a href="https://github.com/AlejoGuerraa" style="color: inherit; font-weight: bold;">Alejo Guerra</a> 
   </b>
