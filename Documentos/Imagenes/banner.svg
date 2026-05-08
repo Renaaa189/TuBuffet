@@ -1,0 +1,224 @@
+<svg width="1600" height="500" viewBox="0 0 1600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1600" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ff9d2f"/>
+      <stop offset="50%" stop-color="#ff8a00"/>
+      <stop offset="100%" stop-color="#ff6f00"/>
+    </linearGradient>
+
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1200 120) rotate(90) scale(320 500)">
+      <stop stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="60" />
+    </filter>
+
+    <linearGradient id="lineGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .float {
+      animation: float 6s ease-in-out infinite;
+      transform-origin: center;
+    }
+
+    .floatSlow {
+      animation: floatSlow 10s ease-in-out infinite;
+      transform-origin: center;
+    }
+
+    .pulse {
+      animation: pulse 3s ease-in-out infinite;
+    }
+
+    .moveLine {
+      stroke-dasharray: 12 18;
+      animation: moveLine 7s linear infinite;
+    }
+
+    .particle {
+      animation: particleMove 8s linear infinite;
+    }
+
+    .particle2 {
+      animation: particleMove2 11s linear infinite;
+    }
+
+    .shine {
+      animation: shine 5s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+    }
+
+    @keyframes floatSlow {
+      0%,100% { transform: translateY(0px) translateX(0px); }
+      50% { transform: translateY(-18px) translateX(8px); }
+    }
+
+    @keyframes pulse {
+      0%,100% { opacity: 0.5; }
+      50% { opacity: 1; }
+    }
+
+    @keyframes moveLine {
+      from { stroke-dashoffset: 0; }
+      to { stroke-dashoffset: -200; }
+    }
+
+    @keyframes particleMove {
+      0% {
+        transform: translateX(0px) translateY(0px);
+        opacity: 0;
+      }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% {
+        transform: translateX(140px) translateY(-60px);
+        opacity: 0;
+      }
+    }
+
+    @keyframes particleMove2 {
+      0% {
+        transform: translateX(0px) translateY(0px);
+        opacity: 0;
+      }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% {
+        transform: translateX(-120px) translateY(50px);
+        opacity: 0;
+      }
+    }
+
+    @keyframes shine {
+      0%,100% { opacity: 0.15; }
+      50% { opacity: 0.4; }
+    }
+
+    .title {
+      font-family: 'Poppins', 'Segoe UI', sans-serif;
+      font-weight: 800;
+      letter-spacing: -2px;
+    }
+
+    .subtitle {
+      font-family: 'Poppins', 'Segoe UI', sans-serif;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="1600" height="500" rx="40" fill="url(#bgGradient)"/>
+  <rect width="1600" height="500" rx="40" fill="url(#glow)"/>
+
+  <!-- Background waves -->
+  <path d="M0 360C240 280 380 450 620 390C860 330 970 190 1210 230C1390 260 1500 320 1600 260V500H0V360Z" fill="white" opacity="0.06" class="floatSlow"/>
+
+  <path d="M0 400C180 320 320 480 560 430C760 390 900 280 1120 310C1360 340 1450 450 1600 390V500H0V400Z" fill="white" opacity="0.05" class="float"/>
+
+  <!-- Animated network lines -->
+  <g opacity="0.28">
+    <path d="M1080 90L1280 140L1420 80" stroke="url(#lineGradient)" stroke-width="3" fill="none" class="moveLine"/>
+    <path d="M1180 220L1380 260L1490 180" stroke="url(#lineGradient)" stroke-width="3" fill="none" class="moveLine"/>
+    <path d="M980 290L1140 360L1340 320" stroke="url(#lineGradient)" stroke-width="3" fill="none" class="moveLine"/>
+  </g>
+
+  <!-- Network dots -->
+  <g class="pulse">
+    <circle cx="1080" cy="90" r="6" fill="white"/>
+    <circle cx="1280" cy="140" r="7" fill="white"/>
+    <circle cx="1420" cy="80" r="5" fill="white"/>
+    <circle cx="1180" cy="220" r="6" fill="white"/>
+    <circle cx="1380" cy="260" r="8" fill="white"/>
+    <circle cx="1490" cy="180" r="5" fill="white"/>
+    <circle cx="980" cy="290" r="6" fill="white"/>
+    <circle cx="1140" cy="360" r="7" fill="white"/>
+    <circle cx="1340" cy="320" r="5" fill="white"/>
+  </g>
+
+  <!-- Floating particles -->
+  <g>
+    <circle cx="250" cy="80" r="4" fill="white" opacity="0.5" class="particle"/>
+    <circle cx="330" cy="150" r="3" fill="white" opacity="0.4" class="particle2"/>
+    <circle cx="1450" cy="120" r="4" fill="white" opacity="0.5" class="particle"/>
+    <circle cx="1320" cy="410" r="5" fill="white" opacity="0.4" class="particle2"/>
+  </g>
+
+  <!-- Left Icon Area -->
+  <g transform="translate(120 90)" filter="url(#softShadow)" class="float">
+
+    <!-- Wallet/stack -->
+    <g>
+      <rect x="0" y="120" width="180" height="28" rx="10" fill="white" opacity="0.95"/>
+      <rect x="8" y="92" width="180" height="28" rx="10" fill="white" opacity="0.95"/>
+      <rect x="16" y="64" width="180" height="28" rx="10" fill="white" opacity="0.95"/>
+      <rect x="24" y="36" width="180" height="28" rx="10" fill="white" opacity="0.98"/>
+      <rect x="32" y="8" width="180" height="28" rx="10" fill="white"/>
+
+      <!-- notebook spirals -->
+      <g opacity="0.8">
+        <circle cx="20" cy="50" r="8" stroke="#ff8a00" stroke-width="3" fill="none"/>
+        <circle cx="36" cy="50" r="8" stroke="#ff8a00" stroke-width="3" fill="none"/>
+        <circle cx="52" cy="50" r="8" stroke="#ff8a00" stroke-width="3" fill="none"/>
+        <circle cx="68" cy="50" r="8" stroke="#ff8a00" stroke-width="3" fill="none"/>
+      </g>
+
+      <!-- card lines -->
+      <path d="M55 104H160" stroke="#ff8a00" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+      <path d="M70 132H170" stroke="#ff8a00" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+
+      <!-- bookmark -->
+      <path d="M120 148V182L132 172L144 182V148" fill="white" opacity="0.9"/>
+    </g>
+
+    <!-- Pencil -->
+    <g transform="translate(120 -10)">
+      <rect x="0" y="0" width="14" height="72" rx="5" fill="white"/>
+      <polygon points="0,72 14,72 7,90" fill="white"/>
+      <rect x="0" y="12" width="14" height="8" fill="#ffb347" opacity="0.8"/>
+    </g>
+
+    <!-- Small flag -->
+    <g transform="translate(132 -28)">
+      <line x1="0" y1="0" x2="0" y2="40" stroke="white" stroke-width="4"/>
+      <path d="M0 0L38 10L0 20Z" fill="white"/>
+      <text x="10" y="14" font-size="12" fill="#ff8a00" font-family="Arial" font-weight="700">T</text>
+    </g>
+  </g>
+
+  <!-- Main Title -->
+  <g transform="translate(520 180)">
+    <text x="0" y="0" font-size="120" fill="white" class="title" filter="url(#softShadow)">
+      TuBuffet
+    </text>
+
+    <text x="8" y="78" font-size="42" fill="white" class="subtitle" opacity="0.95">
+      Menos fila, más recreo
+    </text>
+
+    <!-- Animated underline -->
+    <rect x="8" y="102" width="420" height="8" rx="20" fill="white" opacity="0.3"/>
+    <rect x="8" y="102" width="180" height="8" rx="20" fill="white" class="shine"/>
+  </g>
+
+  <!-- Mobile UI Inspired Cards -->
+  <g transform="translate(1220 250)" class="floatSlow">
+    <rect x="0" y="0" width="220" height="130" rx="24" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)"/>
+
+    <circle cx="34" cy="34" r="12" fill="white" opacity="0.9"/>
+    <rect x="58" y="24" width="110" height="12" rx="10" fill="white" opacity="0.8"/>
+    <rect x="58" y="46" width="80" height="10" rx="10" fill="white"
