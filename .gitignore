@@ -1,0 +1,7 @@
+# Node ignores
+.env
+node_modules/
+
+# Optional editor ignores
+.vscode/
+*.log
