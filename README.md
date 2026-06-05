@@ -63,12 +63,6 @@ El sistema contempla el diseño y desarrollo de una plataforma móvil enfocada e
 - Historial de compras  
 - Sistema de reputación  
 
-### Padres / Tutores
-- Carga remota de saldo  
-- Visualización de gastos en tiempo real  
-- Control del consumo  
-- Restricciones alimentarias  
-
 ### Buffet (Administrador)
 - Gestión de stock y precios  
 - Validación de pedidos mediante código  
