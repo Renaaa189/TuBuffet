@@ -33,9 +33,7 @@ Como solución, se propone una aplicación móvil que permite realizar pedidos d
 - Sistema de “compra rápida” basado en historial  
 
 ### Sistema económico
-- Billetera virtual individual  
 - Historial de pedidos  
-- Sistema de puntos y recompensas  
 - Descuentos según institución  
 
 ### Experiencia de usuario
@@ -56,8 +54,7 @@ El sistema contempla el diseño y desarrollo de una plataforma móvil enfocada e
 
 ### Alumno / Docente
 - Visualización de menú digital  
-- Realización de pedidos anticipados  
-- Uso de billetera virtual  
+- Realización de pedidos anticipados   
 - Historial de compras  
 - Sistema de reputación  
 
