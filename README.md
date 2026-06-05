@@ -13,7 +13,6 @@ Esta situación genera incomodidad en alumnos y docentes, y dificulta la organiz
 
 Como solución, se propone una aplicación móvil que permite realizar pedidos de forma virtual, rápida y organizada, evitando esperas innecesarias y mejorando la experiencia general.
 
-Además, el sistema incorpora una billetera virtual individual que fomenta la educación financiera, promoviendo el uso responsable del dinero desde edades tempranas.
 
 ---
 
@@ -22,8 +21,7 @@ Además, el sistema incorpora una billetera virtual individual que fomenta la ed
 - Reducir tiempos de espera en el buffet  
 - Mejorar la organización de pedidos  
 - Facilitar la gestión de ventas e inventario  
-- Brindar control y visibilidad a padres/tutores  
-- Incorporar herramientas educativas (billetera virtual)  
+- Incorporar herramientas educativas
 
 ---
 
