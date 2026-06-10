@@ -34,15 +34,18 @@ const register = async (req, res) => {
       const [institutions] = await db.query(
         'SELECT id, access_code_hash FROM institutions WHERE active = 1'
       );
+      console.log(institutions);
   
       let institutionId = null;
   
       for (const institution of institutions) {
   
-        const validCode = await bcrypt.compare(
-          institutionCode,
-          institution.access_code_hash
-        );
+       // const validCode = await bcrypt.compare(
+       //   institutionCode,
+       //   institution.access_code_hash
+        // );
+        
+        const validCode = institutionCode === institution.access_code_hash;
   
         if (validCode) {
           institutionId = institution.id;
@@ -94,7 +97,7 @@ const login = async (req, res) => {
       }
   
       const [users] = await db.query(
-        `SELECTid,email,password_hash, role, institution_id FROM users WHERE email = ?`,[email] );
+        `SELECT id, email,password_hash, role, institution_id FROM users WHERE email = ?`,[email] );
   
       if (users.length === 0) {
         return res.status(401).json({
@@ -120,7 +123,7 @@ const login = async (req, res) => {
           role: user.role,
           institution_id: user.institution_id
         },
-        process.env.JWT_SECRET,
+        process.env.SECRET,
         {
           expiresIn: '8h'
         }
