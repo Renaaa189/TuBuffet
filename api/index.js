@@ -3,7 +3,7 @@ require('dotenv').config(); // Carga las variables de entorno desde el archivo .
 const express = require('express');
 const cors = require('cors');
 
-// const { login, register } = require('./controllers/userController');
+const { login, register } = require('./controllers/userController');
 // const isAdmin = require('./middlewares/isAdmin');
 // const checkToken = require('./middlewares/checkToken');
 
@@ -36,8 +36,8 @@ server.get('/', (req, res) => {
     res.status(200).send('Bienvenido a la API de TuBuffet!');
 });
 
-// server.post('/login', login);
-// server.post('/register', register);
+server.post("/register", register);
+server.post("/login", login);
 
 server.listen(PORT, async () => {
     console.log('La API está corriendo en el puerto ', PORT);

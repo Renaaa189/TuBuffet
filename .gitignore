@@ -1,7 +1,12 @@
 # Node ignores
 .env
 node_modules/
+dist/
+build/
+
+.DS_Store
 
 # Optional editor ignores
 .vscode/
 *.log
+
