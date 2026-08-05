@@ -1,0 +1,1 @@
+ // Va a ser la primera pantalla, contiene los botones registrar, iniciar sesion y "quiero registrar mi comercio"
